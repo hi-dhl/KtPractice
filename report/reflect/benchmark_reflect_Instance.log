@@ -1,0 +1,139 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 3 s each
+# Measurement: 5 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.ReflectBenchmark.createInstance
+
+# Run progress: 0.00% complete, ETA 00:02:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.264 ms/op
+# Warmup Iteration   2: 0.819 ms/op
+# Warmup Iteration   3: 0.604 ms/op
+# Warmup Iteration   4: 0.539 ms/op
+# Warmup Iteration   5: 0.517 ms/op
+Iteration   1: 0.604 ms/op
+Iteration   2: 0.599 ms/op
+Iteration   3: 0.486 ms/op
+Iteration   4: 0.639 ms/op
+Iteration   5: 0.559 ms/op
+
+
+Result "com.hi.dhl.demo.ReflectBenchmark.createInstance":
+  0.578 ±(99.9%) 0.225 ms/op [Average]
+  (min, avg, max) = (0.486, 0.578, 0.639), stdev = 0.058
+  CI (99.9%): [0.353, 0.802] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 3 s each
+# Measurement: 5 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.ReflectBenchmark.createReflectInstance
+
+# Run progress: 25.00% complete, ETA 00:01:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 8.870 ms/op
+# Warmup Iteration   2: 5.984 ms/op
+# Warmup Iteration   3: 6.927 ms/op
+# Warmup Iteration   4: 4.703 ms/op
+# Warmup Iteration   5: 5.206 ms/op
+Iteration   1: 4.914 ms/op
+Iteration   2: 4.516 ms/op
+Iteration   3: 4.933 ms/op
+Iteration   4: 4.741 ms/op
+Iteration   5: 4.445 ms/op
+
+
+Result "com.hi.dhl.demo.ReflectBenchmark.createReflectInstance":
+  4.710 ±(99.9%) 0.861 ms/op [Average]
+  (min, avg, max) = (4.445, 4.710, 4.933), stdev = 0.224
+  CI (99.9%): [3.848, 5.571] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 3 s each
+# Measurement: 5 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.ReflectBenchmark.createReflectInstanceAccessibleFalse
+
+# Run progress: 50.00% complete, ETA 00:01:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.544 ms/op
+# Warmup Iteration   2: 1.064 ms/op
+# Warmup Iteration   3: 1.154 ms/op
+# Warmup Iteration   4: 0.991 ms/op
+# Warmup Iteration   5: 1.031 ms/op
+Iteration   1: 1.032 ms/op
+Iteration   2: 1.007 ms/op
+Iteration   3: 1.023 ms/op
+Iteration   4: 1.044 ms/op
+Iteration   5: 0.985 ms/op
+
+
+Result "com.hi.dhl.demo.ReflectBenchmark.createReflectInstanceAccessibleFalse":
+  1.018 ±(99.9%) 0.088 ms/op [Average]
+  (min, avg, max) = (0.985, 1.018, 1.044), stdev = 0.023
+  CI (99.9%): [0.930, 1.107] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 3 s each
+# Measurement: 5 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.ReflectBenchmark.createReflectInstanceAccessibleTrue
+
+# Run progress: 75.00% complete, ETA 00:00:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.571 ms/op
+# Warmup Iteration   2: 0.906 ms/op
+# Warmup Iteration   3: 0.931 ms/op
+# Warmup Iteration   4: 0.920 ms/op
+# Warmup Iteration   5: 0.897 ms/op
+Iteration   1: 0.895 ms/op
+Iteration   2: 0.961 ms/op
+Iteration   3: 0.931 ms/op
+Iteration   4: 0.942 ms/op
+Iteration   5: 0.983 ms/op
+
+
+Result "com.hi.dhl.demo.ReflectBenchmark.createReflectInstanceAccessibleTrue":
+  0.943 ±(99.9%) 0.128 ms/op [Average]
+  (min, avg, max) = (0.895, 0.943, 0.983), stdev = 0.033
+  CI (99.9%): [0.815, 1.070] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:03
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                               Mode  Cnt  Score   Error  Units
+ReflectBenchmark.createInstance                        avgt    5  0.578 ± 0.225  ms/op
+ReflectBenchmark.createReflectInstance                 avgt    5  4.710 ± 0.861  ms/op
+ReflectBenchmark.createReflectInstanceAccessibleFalse  avgt    5  1.018 ± 0.088  ms/op
+ReflectBenchmark.createReflectInstanceAccessibleTrue   avgt    5  0.943 ± 0.128  ms/op
+
+Benchmark result is saved to benchmark_reflect1651644579076.json

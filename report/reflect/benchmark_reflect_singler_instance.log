@@ -1,0 +1,45 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 3 s each
+# Measurement: 5 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.ReflectBenchmark.createSingleInstance
+
+# Run progress: 0.00% complete, ETA 00:00:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.015 us/op
+# Warmup Iteration   2: 0.006 us/op
+# Warmup Iteration   3: 0.005 us/op
+# Warmup Iteration   4: 0.005 us/op
+# Warmup Iteration   5: 0.005 us/op
+Iteration   1: 0.006 us/op
+Iteration   2: 0.006 us/op
+Iteration   3: 0.005 us/op
+Iteration   4: 0.005 us/op
+Iteration   5: 0.005 us/op
+
+
+Result "com.hi.dhl.demo.ReflectBenchmark.createSingleInstance":
+  0.005 ±(99.9%) 0.002 us/op [Average]
+  (min, avg, max) = (0.005, 0.005, 0.006), stdev = 0.001
+  CI (99.9%): [0.003, 0.007] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:31
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark           Mode   Cnt   Score    Error     Units
+创建10万个Person      avgt    5   446.240  ± 50.597   us/op
+创建1个Person         avgt    5   0.005    ± 0.002    us/op
+
+
+Benchmark result is saved to report/reflect/benchmark_1651846566452.json
