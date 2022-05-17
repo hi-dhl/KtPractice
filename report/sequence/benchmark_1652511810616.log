@@ -1,0 +1,97 @@
+# JMH version: 1.35
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 10 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.sequence.SequenceBenchmark.runIterable
+
+# Run progress: 0.00% complete, ETA 00:02:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 24.376 ±(99.9%) 2.945 ms/op
+# Warmup Iteration   2: 12.845 ±(99.9%) 0.893 ms/op
+# Warmup Iteration   3: 9.762 ±(99.9%) 0.647 ms/op
+# Warmup Iteration   4: 10.514 ±(99.9%) 0.880 ms/op
+# Warmup Iteration   5: 8.117 ±(99.9%) 0.362 ms/op
+# Warmup Iteration   6: 9.395 ±(99.9%) 0.599 ms/op
+# Warmup Iteration   7: 12.680 ±(99.9%) 0.897 ms/op
+# Warmup Iteration   8: 11.510 ±(99.9%) 0.714 ms/op
+# Warmup Iteration   9: 11.617 ±(99.9%) 0.974 ms/op
+# Warmup Iteration  10: 9.912 ±(99.9%) 0.587 ms/op
+Iteration   1: 8.825 ±(99.9%) 0.460 ms/op
+Iteration   2: 9.819 ±(99.9%) 0.605 ms/op
+Iteration   3: 10.527 ±(99.9%) 0.565 ms/op
+Iteration   4: 12.087 ±(99.9%) 1.434 ms/op
+Iteration   5: 17.343 ±(99.9%) 2.441 ms/op
+Iteration   6: 12.093 ±(99.9%) 1.089 ms/op
+Iteration   7: 9.539 ±(99.9%) 0.861 ms/op
+Iteration   8: 8.598 ±(99.9%) 0.284 ms/op
+Iteration   9: 6.723 ±(99.9%) 0.266 ms/op
+Iteration  10: 7.036 ±(99.9%) 0.247 ms/op
+
+
+Result "com.hi.dhl.demo.sequence.SequenceBenchmark.runIterable":
+  10.259 ±(99.9%) 4.657 ms/op [Average]
+  (min, avg, max) = (6.723, 10.259, 17.343), stdev = 3.080
+  CI (99.9%): [5.603, 14.916] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 1.8.0_51, Java HotSpot(TM) 64-Bit Server VM, 25.51-b03
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 10 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.hi.dhl.demo.sequence.SequenceBenchmark.runSequence
+
+# Run progress: 50.00% complete, ETA 00:01:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 6.756 ±(99.9%) 0.595 ms/op
+# Warmup Iteration   2: 4.861 ±(99.9%) 0.168 ms/op
+# Warmup Iteration   3: 4.656 ±(99.9%) 0.170 ms/op
+# Warmup Iteration   4: 5.201 ±(99.9%) 0.197 ms/op
+# Warmup Iteration   5: 5.595 ±(99.9%) 0.188 ms/op
+# Warmup Iteration   6: 4.248 ±(99.9%) 0.138 ms/op
+# Warmup Iteration   7: 5.658 ±(99.9%) 0.185 ms/op
+# Warmup Iteration   8: 5.435 ±(99.9%) 0.176 ms/op
+# Warmup Iteration   9: 5.067 ±(99.9%) 0.069 ms/op
+# Warmup Iteration  10: 5.008 ±(99.9%) 0.155 ms/op
+Iteration   1: 4.469 ±(99.9%) 0.086 ms/op
+Iteration   2: 4.327 ±(99.9%) 0.129 ms/op
+Iteration   3: 4.426 ±(99.9%) 0.186 ms/op
+Iteration   4: 4.530 ±(99.9%) 0.185 ms/op
+Iteration   5: 4.700 ±(99.9%) 0.153 ms/op
+Iteration   6: 5.467 ±(99.9%) 0.132 ms/op
+Iteration   7: 4.182 ±(99.9%) 0.114 ms/op
+Iteration   8: 4.432 ±(99.9%) 0.210 ms/op
+Iteration   9: 6.366 ±(99.9%) 0.263 ms/op
+Iteration  10: 6.244 ±(99.9%) 0.203 ms/op
+
+
+Result "com.hi.dhl.demo.sequence.SequenceBenchmark.runSequence":
+  4.914 ±(99.9%) 1.227 ms/op [Average]
+  (min, avg, max) = (4.182, 4.914, 6.366), stdev = 0.811
+  CI (99.9%): [3.688, 6.141] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:09
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                      Mode  Cnt   Score   Error  Units
+SequenceBenchmark.runIterable  avgt   10  10.259 ± 4.657  ms/op
+SequenceBenchmark.runSequence  avgt   10   4.914 ± 1.227  ms/op
+
+Benchmark result is saved to report/sequence/benchmark_1652511810616.json
