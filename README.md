@@ -7,15 +7,26 @@
 
 这个仓库用于实践和测试 Kotlin 、 Java 性能 和 新语法相关的代码案例，正在陆续添加新的案例。欢迎 **star**
 
-### 反射
+**目录**
 
-关于反射耗时，详细请查看文章 [揭秘反射真的很耗时吗，反射 10 万次，耗时多久](https://mp.weixin.qq.com/s/Ah8Yau_UW07s6LnGjrG4hA)
+* 反射性能测试
+    * [文章：揭秘反射真的很耗时吗，反射 10 万次，耗时多久](https://mp.weixin.qq.com/s/Ah8Yau_UW07s6LnGjrG4hA)
+    * [视频：bilibili 地址：https://b23.tv/Hprua24](https://b23.tv/Hprua24)
+* Iterable和Sequence的性能测试
+* 后续内容正在陆续增加中，将会在公众号（ByteCode）、 bilibili 和视频号上陆续发布
 
-**文章摘要**
+![](https://img.hi-dhl.com/ercode3.png)
 
-关于网上的答案都是千篇一律，比如反射慢、反射过程中频繁的创建对象占用更多内存、频繁的触发 GC 等等。
 
-那么反射慢多少？创建 1 个对象 或者 创建 10 万个对象耗时多少？单次反射 或者 10 万次反射耗时多少。测试结果我已经放到了 **KtPractice/report/reflect** 下面了。
+### 反射性能测试
+
+这是基于 JMH(Java Microbenchmark Harness) 测试的结果，clone 项目，运行 **ReflectBenchmark** 即可看到对应的结果。
+
+* 文章分析：[揭秘反射真的很耗时吗，反射 10 万次，耗时多久](https://mp.weixin.qq.com/s/Ah8Yau_UW07s6LnGjrG4hA)
+
+* [视频版本 bilibili 地址：https://b23.tv/Hprua24](https://b23.tv/Hprua24)
+
+创建 1 个对象 或者 创建 10 万个对象耗时多少？单次反射 或者 10 万次反射耗时多少。测试结果我已经放到了 **KtPractice/report/reflect** 下面了。
 
 ![](http://img.hi-dhl.com/202205072207765.png)
 
@@ -31,7 +42,10 @@
 | 属性调用 | 0.241 ms/op | 12.432 ms/op | 1.362  ms/op | 1.202  ms/op |
 | 伴生对象 | 0.470 ms/op | 5.661 ms/op | 0.840  ms/op | 0.702  ms/op |
 
-这是基于 JMH(Java Microbenchmark Harness) 测试的结果，clone 项目，运行 **ReflectBenchmark** 即可看到对应的结果。
+### Iterable和Sequence的性能测试
+
+文章分析和视频动画讲解，将会在公众号、 bilibili 和视频号上陆续发布
+
 
 
 ### 后续内容正在陆续增加中...
@@ -54,9 +68,7 @@
 * 个人微信：hi-dhl
 * 公众号：ByteCode，包含 Jetpack ，Kotlin ，Android 10 系列源码，译文，LeetCode / 剑指 Offer / 多线程 / 国内外大厂算法题 等等一系列文章
 
-<div align="center">
-    <img src='http://cdn.51git.cn/2020-10-20-151047.png' width = 420px/>
-</div>
+![](https://img.hi-dhl.com/ercode3.png)
 
 ## License
 
