@@ -13,6 +13,10 @@
     * [文章：揭秘反射真的很耗时吗，反射 10 万次，耗时多久](https://mp.weixin.qq.com/s/Ah8Yau_UW07s6LnGjrG4hA)
     * [视频：bilibili 地址：https://b23.tv/Hprua24](https://b23.tv/Hprua24)
 * Iterable和Sequence的性能测试
+    * [文章分析：迭代器 Iterable 这么慢吗？而它让性能提升 N 倍](https://mp.weixin.qq.com/s/NkdL_C9YZHanyoUFg-9tBw)
+    * [视频版 bilibili地址 ： https://b23.tv/cumiLVf](https://b23.tv/cumiLVf)
+* 揭秘 == 、equals 和 === 面试题必问，这些坑遇到过吗？
+    * [视频版 bilibili地址 ：https://www.bilibili.com/video/BV1cB4y1R7bK?share_source=copy_web](https://www.bilibili.com/video/BV1cB4y1R7bK?share_source=copy_web)
 * 后续内容正在陆续增加中，将会在公众号（ByteCode）、 bilibili 和视频号上陆续发布
 
 ![](https://img.hi-dhl.com/ercode3.png)
@@ -44,8 +48,11 @@
 
 ### Iterable和Sequence的性能测试
 
-文章分析和视频动画讲解，将会在公众号、 bilibili 和视频号上陆续发布
+运行 `SequenceBenchmark` 和 `TestSequenceMemory` 即可生成结果，或者进入仓库 `report/sequence`  目录下查我已经生成好的结果。
 
+* [文章分析：迭代器 Iterable 这么慢吗？而它让性能提升 N 倍](https://mp.weixin.qq.com/s/NkdL_C9YZHanyoUFg-9tBw)
+
+* [视频版 bilibili地址 ： https://b23.tv/cumiLVf](https://b23.tv/cumiLVf)
 
 
 ### 后续内容正在陆续增加中...

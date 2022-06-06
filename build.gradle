@@ -31,3 +31,8 @@ compileKotlin {
         languageVersion = "1.6"
     }
 }
+
+allprojects {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
